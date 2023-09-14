@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Guest User</title>
+</head>
+<body>
+    <h1>guest page</h1>
+
+
+<script type=text/javascript>
+        $(function() {
+          $('a#test').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/background_process_test',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
+
+<div class='container'>
+    <h3>Test</h3>
+    <form>
+        <a href=# id=test><button class='btn btn-default'>Test</button></a>
+    </form>
+</div>
+</body>
+</html>
