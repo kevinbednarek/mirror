@@ -17,7 +17,7 @@ def kevin():
 
 @app.route('/background_process_test')
 def background_process_test():
-    print("Let's do hand stuff")
+    print("Hands???")
     get_mouse()
     return "nothing"
 
